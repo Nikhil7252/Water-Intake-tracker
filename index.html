@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Water Intake Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Water Intake Tracker</h1>
+        <label for="goal">Daily Water Goal (Liters):</label>
+        <input type="number" id="goal" placeholder="e.g., 2" />
+
+        <label for="glasses">Number of Glasses Drunk:</label>
+        <input type="number" id="glasses" placeholder="e.g., 4" />
+
+        <button id="calculate">Calculate</button>
+      </div>
+
+      <div class="cup-container">
+        <div class="big-cup">
+          <div id="percentage"></div>
+          <div id="remained">
+            <span id="liters"></span>
+            <small>Remained</small>
+          </div>
+        </div>
+        <p id="status-message"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

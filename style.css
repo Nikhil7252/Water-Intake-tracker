@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4a90e2, #005f99);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    background: #007acc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #fff;
+    color: #007acc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: #005f99;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Cup Styles */
+  .cup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .big-cup {
+    width: 180px;
+    height: 400px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    background: #003d66;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  #remained {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  #percentage {
+    background: #4a90e2;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    visibility: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  #status-message {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
